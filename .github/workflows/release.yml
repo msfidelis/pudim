@@ -2,7 +2,7 @@ name: 'Entrega de Pudim'
 on:
   push:
 jobs:
-  build-docker-artifacts:
+  entrega-de-pudim:
     runs-on: ubuntu-latest
     if: contains(github.ref, 'master')
     steps:
