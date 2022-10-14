@@ -14,11 +14,6 @@ jobs:
       - name: Colocando o Lacre na Embalagem do Pudim
         run: docker tag pudim:latest fidelissauro/pudim:latest
 
-      - name: Colocando o Lacre na Embalagem do Pudim
-        run: | 
-          TAG=$(git describe --tags --abbrev=0)
-          docker tag pudim:latest fidelissauro/pudim:$TAG
-
       - name: Pegando o celular do motoboy
         uses: docker/login-action@v1
         with:
@@ -27,8 +22,3 @@ jobs:
 
       - name: Mandando o Motoboy Levar o Pudim
         run: docker push fidelissauro/pudim:latest
-
-      - name: Mandando o Motoboy Levar o Pudim
-        run: |
-          TAG=$(git describe --tags --abbrev=0)
-          docker push fidelissauro/pudim:$TAG
