@@ -14,6 +14,6 @@ docker run -p 8000:80 -it pudim
 
 
 ```bash
-docker pull msfidelis/pudim:v0
-docker run -p 8000:80 -it msfidelis/pudim:v0
+docker pull fidelissauro/pudim:latest
+docker run -p 8000:80 -it fidelissauro/pudim:latest
 ```
